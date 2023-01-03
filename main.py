@@ -19,5 +19,11 @@ while True:
         unit_in = input("unit: ")
         if unit_in in length.keys:
             print("convert ", val , unit_in, "to? ")
+            for unit in length.keys():
+                print(unit, end=" ")
+            unit_out = input()
+            
+
+            
         else:
             print("Unit not acceptable")
