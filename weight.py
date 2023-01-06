@@ -1,9 +1,9 @@
 
-length = {"ym":1e-24,"zm":1e-21,"am":1e-18,"fm":1e-15,"pm":1e-12,"angstrom":1e-10,"nm":1e-9,"microm":1e-6,"mm":0.001, "cm":0.01,"dm":0.1, "m":1, "Dm":10, "hm":100,"km":1000}
+weight = {"yg":1e-24,"zg":1e-21,"ag":1e-18,"fg":1e-15,"pg":1e-12,"ng":1e-9,"microg":1e-6,"mg":0.001, "cg":0.01,"dg":0.1, "g":1, "Dg":10, "hg":100,"kg":1000, "ton":1e+6}
  
-def L():
+def W():
 
-    available_units = length.keys()
+    available_units = weight.keys()
     try:
         val = float(input("Enter Value: "))   # Input Value
         for unit in available_units:
@@ -16,7 +16,7 @@ def L():
             unit_out = input()
             if unit_out in available_units:
                 print("Converting",val,unit_in, "to", unit_out)
-                output = val*length[unit_in]/length[unit_out]
+                output = val*weight[unit_in]/weight[unit_out]
                 print(val,unit_in,"=",output,unit_out)
             else:
                 print("Unit not available")
