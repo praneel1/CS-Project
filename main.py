@@ -9,6 +9,7 @@ from length import *
 from weight import *
 from volume import *
 from currency import *
+from speed import *
 
 while True:
     convert_type = input("Enter type: L(Length), W(Weight), V(Volume), C(Currency), T(Temperature), S(Speed), A(Angles)")
@@ -23,6 +24,8 @@ while True:
         V()
     elif convert_type == "C":
         C()
+    elif convert_type == "S":
+        S()
     else:
         continue
 
