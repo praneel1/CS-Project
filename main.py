@@ -13,7 +13,9 @@ from speed import *
 from angles import *
 
 while True:
-    convert_type = input("Enter type: L(Length), W(Weight), V(Volume), C(Currency), T(Temperature), S(Speed), A(Angles)")
+    print("==================================================================================================================================================")
+
+    convert_type = input("Enter type: L(Length), W(Weight), V(Volume), C(Currency), T(Temperature), S(Speed), A(Angles) \n =====>")
 
     if convert_type == "L":      
         L()
@@ -28,5 +30,6 @@ while True:
     elif convert_type == "A":
         A()
     else:
+        print("INVALID TYPE")
         continue
 
