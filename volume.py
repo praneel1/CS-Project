@@ -16,7 +16,7 @@ def V():
             if unit_out in available_units:
                 print("Converting",val,unit_in, "to", unit_out)
                 output = val*volume[unit_in]/volume[unit_out]
-                print(val,unit_in,"=",output,unit_out)
+                print(val,unit_in,"=",round(output,3),unit_out)
             else:
                 print("Unit not available")
         else:
