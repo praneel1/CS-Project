@@ -12,11 +12,12 @@ from currency import *
 from speed import *
 from angles import *
 from pressure import *
+from temperature import *
 
 while True:
     print("==================================================================================================================================================")
 
-    convert_type = input("Enter type: L(Length), W(Weight), V(Volume), C(Currency), T(Temperature), S(Speed), A(Angles), P(Pressure) \n =====>")
+    convert_type = input("Enter type: L(Length), W(Weight), V(Volume), C(Currency), T(Temperature), S(Speed), A(Angles), P(Pressure) \n ====>  ")
 
     if convert_type == "L":      
         L()
@@ -31,7 +32,9 @@ while True:
     elif convert_type == "A":
         A()
     elif convert_type == "P":
-        P()    
+        P() 
+    elif convert_type == "T":
+        T()   
     else:
         print("INVALID TYPE")
         continue
